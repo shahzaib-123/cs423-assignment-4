@@ -18,7 +18,7 @@ resource "aws_instance" "assignment4-EC2-1" {
 }
 
 resource "aws_instance" "assignment4-EC2-2" {
-  ami                    = "ami-07c589821f2b353aa"  # Replace with the latest Ubuntu AMI
+  ami                    = "ami-07c589821f2b353aa"
   instance_type          = "t2.micro"
   key_name               = module.key_pair.key_pair_name
   subnet_id              = module.networking.private_subnet_1_id
