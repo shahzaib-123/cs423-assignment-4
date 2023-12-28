@@ -18,7 +18,7 @@ resource "aws_instance" "web_server_instance" {
 }
 
 resource "aws_instance" "database_instance" {
-  ami                    = "your_ubuntu_ami_id"  # Use the appropriate AMI ID for your database instance
+  ami                    = "ami-07c589821f2b353aa"
   instance_type          = "t2.micro"
   subnet_id              = aws_subnet.private_subnet_1.id
   key_name               = aws_key_pair.cs423_key_pair.key_name
